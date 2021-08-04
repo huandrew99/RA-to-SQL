@@ -1,0 +1,642 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.3)  11 JUL 2021 02:51
+entering extended mode
+**./test.tex
+(test.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> xparse <2020-03-03>
+(D:\Miktex\tex/latex/exam\exam.cls
+Document Class: exam 2017/12/17 Version 2.603 by Philip Hirschhorn
+(D:\Miktex\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (D:\Miktex\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(D:\Miktex\tex/latex/base\size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+\@extrawidth=\skip49
+\@rightmargin=\skip50
+\@extrahead=\skip51
+\@extrafoot=\skip52
+\run@exhd=\skip53
+\fp@exhd=\skip54
+\run@exft=\skip55
+\fp@exft=\skip56
+\covrun@exhd=\skip57
+\covfp@exhd=\skip58
+\covrun@exft=\skip59
+\covfp@exft=\skip60
+\c@num@coverpages=\count187
+\c@latest@ques=\count188
+\c@ques@end=\count189
+\c@last@object=\count190
+\c@incmp@ques=\count191
+\c@next@ques=\count192
+\c@next@page=\count193
+\c@tmp@hlfcntr=\count194
+\c@ifpos@cntr=\count195
+\c@question=\count196
+\c@partno=\count197
+\c@subpart=\count198
+\c@subsubpart=\count199
+\c@choice=\count266
+\c@numpoints=\count267
+\c@numbonuspoints=\count268
+\c@pointsof@thisquestion=\count269
+\c@bonuspointsof@thisquestion=\count270
+\c@numquestions=\count271
+\c@numparts=\count272
+\c@numsubparts=\count273
+\c@numsubsubparts=\count274
+\c@Curr@Page=\count275
+\c@@pagepoints=\count276
+\c@@pagebonuspoints=\count277
+\c@pageof@pagepoints=\count278
+\c@pageof@pagebonuspoints=\count279
+\c@latest@points=\count280
+\c@latest@bonuspoints=\count281
+\pageinfo@commands=\toks15
+\temp@toks=\toks16
+\pagepoint@commands=\toks17
+\point@toks=\toks18
+\c@ques@object=\count282
+\marginpointssep=\skip61
+\rightpointsmargin=\skip62
+\choice@toks=\toks19
+\answerlinelength=\skip63
+\answerskip=\skip64
+\answerclearance=\skip65
+\fillinlinelength=\skip66
+\linefillheight=\skip67
+\linefillthickness=\skip68
+\dottedlinefillheight=\skip69
+\gridsize=\skip70
+\gridlinewidth=\skip71
+\minboxheight=\skip72
+\c@@iterator=\count283
+\@cellwidth=\skip73
+\c@tbl@points=\count284
+\c@tbl@bonuspoints=\count285
+\c@pq@index=\count286
+\c@pq@index@pts=\count287
+\c@pq@index@bpts=\count288
+\c@num@cols=\count289
+\c@num@rows=\count290
+\c@current@row=\count291
+\c@cols@done=\count292
+\exam@box=\box47
+\saved@totalleftmargin=\dimen139
+\@sollistdepth=\count293
+\exam@FrameRule=\dimen140
+\exam@FrameSep=\dimen141
+) (D:\Miktex\tex/latex/base\inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+) (D:\Miktex\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(D:\Miktex\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(D:\Miktex\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (D:\Miktex\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count294
+\Gm@cntv=\count295
+\c@Gm@tempcnt=\count296
+\Gm@bindingoffset=\dimen142
+\Gm@wd@mp=\dimen143
+\Gm@odd@mp=\dimen144
+\Gm@even@mp=\dimen145
+\Gm@layoutwidth=\dimen146
+\Gm@layoutheight=\dimen147
+\Gm@layouthoffset=\dimen148
+\Gm@layoutvoffset=\dimen149
+\Gm@dimlist=\toks23
+ (D:\Miktex\tex/latex/geometry\geometry.cfg))
+(D:\Miktex\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip74
+
+For additional information on amsmath, use the `?' option.
+(D:\Miktex\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(D:\Miktex\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks24
+\ex@=\dimen150
+))
+(D:\Miktex\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen151
+)
+(D:\Miktex\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count297
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count298
+\leftroot@=\count299
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count300
+\DOTSCASE@=\count301
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box48
+\strutbox@=\box49
+\big@size=\dimen152
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count302
+\c@MaxMatrixCols=\count303
+\dotsspace@=\muskip16
+\c@parentequation=\count304
+\dspbrk@lvl=\count305
+\tag@help=\toks25
+\row@=\count306
+\column@=\count307
+\maxfields@=\count308
+\andhelp@=\toks26
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
+\@envbody=\toks27
+\multlinegap=\skip75
+\multlinetaggap=\skip76
+\mathdisplay@stack=\toks28
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(D:\Miktex\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(D:\Miktex\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(D:\Miktex\tex/latex/latex-tools\multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count309
+\mult@box=\box50
+\multicol@leftmargin=\dimen159
+\c@unbalance=\count310
+\c@collectmore=\count311
+\doublecol@number=\count312
+\multicoltolerance=\count313
+\multicolpretolerance=\count314
+\full@width=\dimen160
+\page@free=\dimen161
+\premulticols=\dimen162
+\postmulticols=\dimen163
+\multicolsep=\skip77
+\multicolbaselineskip=\skip78
+\partial@page=\box51
+\last@line=\box52
+\maxbalancingoverflow=\dimen164
+\mult@rightbox=\box53
+\mult@grightbox=\box54
+\mult@gfirstbox=\box55
+\mult@firstbox=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\c@minrows=\count315
+\c@columnbadness=\count316
+\c@finalcolumnbadness=\count317
+\last@try=\dimen165
+\multicolovershoot=\dimen166
+\multicolundershoot=\dimen167
+\mult@nat@firstbox=\box94
+\colbreak@box=\box95
+\mc@col@check@num=\count318
+)
+(D:\Miktex\tex/latex/listings\listings.sty
+\lst@mode=\count319
+\lst@gtempboxa=\box96
+\lst@token=\toks29
+\lst@length=\count320
+\lst@currlwidth=\dimen168
+\lst@column=\count321
+\lst@pos=\count322
+\lst@lostspace=\dimen169
+\lst@width=\dimen170
+\lst@newlines=\count323
+\lst@lineno=\count324
+\lst@maxwidth=\dimen171
+
+(D:\Miktex\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count325
+\lst@skipnumbers=\count326
+\lst@framebox=\box97
+)
+(D:\Miktex\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(D:\Miktex\tex/latex/latex-tools\enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks30
+)
+(D:\Miktex\tex/latex/blindtext\blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(D:\Miktex\tex/latex/latex-tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count327
+\c@Blindtext=\count328
+\c@blind@countparstart=\count329
+\blind@countxx=\count330
+\blindtext@numBlindtext=\count331
+\blind@countyy=\count332
+\c@blindlist=\count333
+\c@blindlistlevel=\count334
+\c@blindlist@level=\count335
+\blind@listitem=\count336
+\c@blind@listcount=\count337
+\c@blind@levelcount=\count338
+\blind@mathformula=\count339
+\blind@Mathformula=\count340
+\c@blind@randomcount=\count341
+\c@blind@randommax=\count342
+\c@blind@pangramcount=\count343
+\c@blind@pangrammax=\count344
+)
+(D:\Miktex\tex/latex/koma-script\scrextend.sty
+Package: scrextend 2020/09/21 v3.32 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+
+(D:\Miktex\tex/latex/koma-script\scrkbase.sty
+Package: scrkbase 2020/09/21 v3.32 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(D:\Miktex\tex/latex/koma-script\scrbase.sty
+Package: scrbase 2020/09/21 v3.32 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(D:\Miktex\tex/latex/koma-script\scrlfile.sty
+Package: scrlfile 2020/09/21 v3.32 KOMA-Script package (file load hooks)
+
+(D:\Miktex\tex/latex/koma-script\scrlfile-hook.sty
+Package: scrlfile-hook 2020/09/21 v3.32 KOMA-Script package (using LaTeX hooks)
+
+
+LaTeX3 Info: Defining command \BeforeFile with sig. 'm' on line 61.
+
+
+LaTeX3 Info: Defining command \AfterFile with sig. 'm' on line 65.
+
+
+LaTeX3 Info: Defining command \BeforeClass with sig. 'm' on line 69.
+
+
+LaTeX3 Info: Defining command \BeforePackage with sig. 'm' on line 73.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfClass with sig. 'smo+m' on line 83.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfPackage with sig. 'smo+m' on line
+(LaTeX3)     93.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterClass with sig. 'smo+m' on line
+(LaTeX3)     173.
+
+
+LaTeX3 Info: Defining command \AfterClass with sig. '' on line 174.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterPackage with sig. 'smo+m' on line
+(LaTeX3)     191.
+
+
+LaTeX3 Info: Defining command \AfterPackage with sig. '' on line 192.
+
+
+LaTeX3 Info: Defining command \ReplaceInput with sig. '' on line 193.
+
+
+LaTeX3 Info: Defining command \ReplaceClass with sig. 'mm' on line 196.
+
+
+LaTeX3 Info: Defining command \ReplacePackage with sig. 'mm' on line 199.
+
+
+LaTeX3 Info: Defining command \UnReplaceInput with sig. '' on line 200.
+
+
+LaTeX3 Info: Defining command \UnReplaceClass with sig. 'm' on line 203.
+
+
+LaTeX3 Info: Defining command \UnReplacePackage with sig. 'mm' on line 206.
+
+
+LaTeX3 Info: Defining command \PreventPackageFromLoading with sig. 's+om' on
+(LaTeX3)     line 234.
+
+
+LaTeX3 Info: Defining command \StorePreventPackageFromLoading with sig. 'm' on
+(LaTeX3)     line 242.
+
+
+LaTeX3 Info: Defining command \ResetPreventPackageFromLoading with sig. '' on
+(LaTeX3)     line 247.
+
+
+LaTeX3 Info: Defining command \UnPreventPackageFromLoading with sig. 'sm' on
+(LaTeX3)     line 261.
+
+
+LaTeX3 Info: Defining command \BeforeClosingMainAux with sig. 'om' on line
+(LaTeX3)     274.
+
+
+LaTeX3 Info: Defining command \AfterReadingMainAux with sig. 'om' on line 287.
+
+
+LaTeX3 Info: Defining command \protected@immediate@write with sig. 'm+m+m' on
+(LaTeX3)     line 298.
+
+
+(D:\Miktex\tex/latex/koma-script\scrlogo.sty
+Package: scrlogo 2020/09/21 v3.32 KOMA-Script package (logo)
+))))))
+(D:\Miktex\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\Miktex\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\Miktex\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(D:\Miktex\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(D:\Miktex\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+)
+(D:\Miktex\tex/latex/comment\comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment')
+(D:\Miktex\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(D:\Miktex\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count345
+\l__pdf_internal_box=\box98
+) (test.aux)
+\openout1 = `test.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-30.0pt
+* \headheight=15.0pt
+* \headsep=15.0pt
+* \topskip=12.0pt
+* \footskip=29.0pt
+* \marginparwidth=36.135pt
+* \marginparsep=5.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count346
+(D:\Miktex\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count347
+\scratchdimen=\dimen174
+\scratchbox=\box99
+\nofMPsegments=\count348
+\nofMParguments=\count349
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count350
+\MPscratchDim=\dimen175
+\MPnumerator=\count351
+\makeMPintoPDFobject=\count352
+\everyMPtoPDFconversion=\toks32
+) (D:\Miktex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+
+
+(D:\Miktex\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+
+ (D:\Miktex\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
+
+ []
+
+
+Overfull \hbox (108.70642pt too wide) in paragraph at lines 89--94
+\OML/cmm/m/it/12 LibrBran \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 LibraryBranch\OT1/cmr/m/n/12 )$ $\OML/cmm/m/it/12 LibrBookC
+opi \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 LibrBran .[]/[]
+ []
+
+
+Overfull \hbox (13.85843pt too wide) in paragraph at lines 89--94
+\OML/cmm/m/it/12 BookCopies$ $LibrBook \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 Libr
+BookCopi .[]/[] Book$ $Result \OMS/cmsy/m/n/12  
+ []
+
+[1
+
+{C:/Users/andre/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+Overfull \hbox (95.9673pt too wide) in paragraph at lines 106--111
+\OML/cmm/m/it/12 BAB \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 Book [][] AuthorBook$ 
+$BookCop \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 BAB [][]
+ []
+
+
+Overfull \hbox (129.09709pt too wide) in paragraph at lines 106--111
+\OML/cmm/m/it/12 BookCopies$ $ABC \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 Author []
+[] BookCop$ $Result \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 ABC\OT1/cmr/m/n/12 )$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+
+Overfull \hbox (23.49751pt too wide) detected at line 117
+\OML/cmm/m/it/12 BookNotEveryBranch \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1
+/cmr/m/n/12 (\OML/cmm/m/it/12 EveryBookWithBranch \OMS/cmsy/m/n/12   \OML/cmm/m
+/it/12 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 BookLoans\OT1/cmr/m/n/12 ))
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
+
+ []
+
+
+Overfull \hbox (21.66449pt too wide) detected at line 132
+\OML/cmm/m/it/12 NotBobBooksLoaned \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1/
+cmr/m/n/12 (\OML/cmm/m/it/12 Author\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 .[]/ Auth
+orBook .[]/ Book .[]/ BookLoans
+ []
+
+[2]
+This exam contains 1 questions with 0 parts, 0 subparts, and 0 subsubparts.
+(test.aux) ) 
+Here is how much of TeX's memory you used:
+ 6490 strings out of 479334
+ 92335 string characters out of 2873605
+ 622062 words of memory out of 3000000
+ 23874 multiletter control sequences out of 15000+200000
+ 411627 words of font info for 59 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 111i,9n,116p,379b,284s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Miktex/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Miktex/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Miktex/font
+s/type1/public/amsfonts/cm/cmr17.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Miktex/fonts/
+type1/public/amsfonts/cm/cmsy6.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Miktex/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb>
+Output written on test.pdf (2 pages, 127125 bytes).
+PDF statistics:
+ 53 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
