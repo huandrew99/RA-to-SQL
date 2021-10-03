@@ -20,12 +20,10 @@
 \usepackage{comment}
 
 
-\def!={\neq}
 \def\j{\Join}
 \def\project{\pi}
 \def\s{\sigma}
 \def\theta_join{\bowtie}
-\def\natural_join{\bowtie}
 \def\ojoin{\setbox0=\hbox{$\bowtie$}%
   \rule[-.02ex]{.25em}{.4pt}\llap{\rule[\ht0]{.25em}{.4pt}}}
 \def\leftouterjoin{\mathbin{\ojoin\mkern-5.8mu\bowtie}}
@@ -100,12 +98,12 @@ For questions 1-3, write your answers on the hw2.tex template file (provided wit
 	$ WithLoans \leftarrow \project_{MembId} (BookLoans)$
 	$ AllMemb \leftarrow \project_{MembId} (Member) $
 	$ NoLoans \leftarrow AllMemb - WithLoans $
-    $ Result \leftarrow \project_{MembName} (NoLoans \natural_join Member) $
+    $ Result \leftarrow \project_{MembName} (NoLoans \j Member) $
 	
 %.................... question 4:Outer join (left, right, or full)  ............... %
 	\choice(15 points) For each author, list their name along with the book title, branch id and  number of copies for all of their book copies. Include authors who do not have books.  
 	
-	\textbf{Answer}:\\
+    \textbf{Answer}:\\
 	$BAB \leftarrow Book \leftouterjoin_{Book.BookId =AuthorBook.BookId } AuthorBook $
 	$BookCop \leftarrow BAB \leftouterjoin_{BAB.BookId =BookCopies.BookId } BookCopies $
 	$ABC \leftarrow Author \leftouterjoin_{Author.AuthId =BookCop.AuthId } BookCop $
@@ -114,30 +112,28 @@ For questions 1-3, write your answers on the hw2.tex template file (provided wit
 	%.............. question 5: multi relation with no joins....................
 	
 	\choice(10 points) Retrieve the \textit{bookid} of books that are borrowed at every branch. \\
-	\textbf{Answer}:\\
-    $EveryBookWithBranch \leftarrow \project_{BookId}(BookLoans) \j \project_{BranId}(LibraryBranch)$
-    $BookNotEveryBranch \leftarrow \project_{BookId}(EveryBookWithBranch - \project_{BookId, BranId}(BookLoans))$
-    $Result \leftarrow \project_{BookId}(BookLoans) - BookNotEveryBranch $
-	
+    \textbf{Answer}:\\
+    $$EveryBookWithBranch \leftarrow \pi_{BookId}(BookLoans) \times \pi_{BranId}(LibraryBranch)$$
+    $$BookNotEveryBranch \leftarrow \pi_{BookId}(EveryBookWithBranch - \pi_{BookId, BranId}(BookLoans))$$
+    $$Result \leftarrow \pi_{BookId}(BookLoans) - BookNotEveryBranch$$
     
    
     %.............. question 6: multi relation with no joins....................
 	
 	\choice(10 points) List the \textit{bookid} of each book that has not been borrowed even though the book has at least one copy. \\
-	\textbf{Answer}:\\
-     $NoCopies \leftarrow \s_{Copies=0}(BookCopies)$
-     $Result \leftarrow \project_{BookId}(Book) - \project_{BookId}(BookLoans) - \project_{BookId}(NoCopies) $
-	
+    \textbf{Answer}:\\
+     $$NoCopies \leftarrow \sigma_{Copies=0}(BookCopies)$$
+     $$Result \leftarrow \pi_{BookId}(Book) - \pi_{BookId}(BookLoans) - \pi_{BookId}(NoCopies)$$
     
     %.............. question 7: set operations ..................................
 	
 	\choice(10 points) List the \textit{title} of books not written by Bob and borrowed in two branches with one of them being in Illinois and the other in Indiana. \\
-	\textbf{Answer}:\\
-    $NotBobBooksLoaned \leftarrow \s_{AuthName != 'Bob'}(Author) \natural_join AuthorBook \natural_join Book \natural_join BookLoans$
-	$IllinoisLoaned \leftarrow \s_{State='Illinois'}(LibraryBranch) \natural_join NotBobBooksLoaned$
-	$IndianaLoaned \leftarrow \s_{State='Indiana'}(LibraryBranch) \natural_join NotBobBooksLoaned$
-	$BothLoaned \leftarrow IllinoisLoaned \cap IndianaLoaned$
-	$Result \leftarrow \project_{Title}(BothLoaned)$
+    \textbf{Answer}:\\
+    $$NotBobBooksLoaned \leftarrow \sigma_{AuthName \neq 'Bob'}(Author) \bowtie AuthorBook \bowtie Book \bowtie BookLoans$$
+	$$IllinoisLoaned \leftarrow \sigma_{State='Illinois'}(LibraryBranch) \bowtie NotBobBooksLoaned$$
+	$$IndianaLoaned \leftarrow \sigma_{State='Indiana'}(LibraryBranch) \bowtie NotBobBooksLoaned$$
+	$$BothLoaned \leftarrow IllinoisLoaned \cap IndianaLoaned$$
+	$$Result \leftarrow \pi_{Title}(BothLoaned)$$
 	
 \end{choices}
 

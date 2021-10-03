@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.3)  11 JUL 2021 02:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.3)  5 AUG 2021 19:40
 entering extended mode
 **./test.tex
 (test.tex
@@ -587,32 +587,50 @@ L/cmm/m/it/12 ABC\OT1/cmr/m/n/12 )$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
-
+Overfull \hbox (91.4609pt too wide) in paragraph at lines 114--119
+\OML/cmm/m/it/12 EveryBookWithBranch \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT
+1/cmr/m/n/12 (\OML/cmm/m/it/12 BookLoans\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \O
+ML/cmm/m/it/12 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 LibraryBranch\OT1/cmr/m/n/1
+2 )$ $\OML/cmm/m/it/12 BookNotEveryBranch \OMS/cmsy/m/n/12  
  []
 
 
-Overfull \hbox (23.49751pt too wide) detected at line 117
-\OML/cmm/m/it/12 BookNotEveryBranch \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1
-/cmr/m/n/12 (\OML/cmm/m/it/12 EveryBookWithBranch \OMS/cmsy/m/n/12   \OML/cmm/m
-/it/12 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 BookLoans\OT1/cmr/m/n/12 ))
+Overfull \hbox (53.71815pt too wide) in paragraph at lines 114--119
+\OML/cmm/m/it/12 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 EveryBookWithBranch \OMS/
+cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 BookLoans\O
+T1/cmr/m/n/12 ))$ $\OML/cmm/m/it/12 Result \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 BookLoans\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/1
+2  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
-
+Overfull \hbox (4.02031pt too wide) in paragraph at lines 123--127
+\OML/cmm/m/it/12 NoCopies \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 BookCopies\OT1/cmr/m/n/12 )$ $\OML/cmm/m/it/12 Result \OMS/
+cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Book\OT1/cm
+r/m/n/12 ) \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 (\OML/cmm/m/i
+t/12 BookLoans\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
-
- []
-
-
-Overfull \hbox (21.66449pt too wide) detected at line 132
+Overfull \hbox (21.66449pt too wide) in paragraph at lines 130--137
 \OML/cmm/m/it/12 NotBobBooksLoaned \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1/
 cmr/m/n/12 (\OML/cmm/m/it/12 Author\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 .[]/ Auth
-orBook .[]/ Book .[]/ BookLoans
+orBook .[]/ Book .[]/ BookLoans$
+ []
+
+
+Overfull \hbox (48.181pt too wide) in paragraph at lines 130--137
+\OML/cmm/m/it/12 IllinoisLoaned \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1/cmr
+/m/n/12 (\OML/cmm/m/it/12 LibraryBranch\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 .[]/ 
+NotBobBooksLoaned$ $IndianaLoaned \OMS/cmsy/m/n/12  
+ []
+
+
+Overfull \hbox (26.79579pt too wide) in paragraph at lines 130--137
+\OML/cmm/m/it/12 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 LibraryBranch\OT1/cmr/m/n
+/12 ) \OML/cmm/m/it/12 .[]/ NotBobBooksLoaned$ $BothLoaned \OMS/cmsy/m/n/12   \
+OML/cmm/m/it/12 IllinoisLoaned \OMS/cmsy/m/n/12 \
  []
 
 [2]
@@ -634,7 +652,7 @@ cmr8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Miktex/fonts/
 type1/public/amsfonts/cm/cmsy6.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb><D:/Miktex/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Miktex/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb>
-Output written on test.pdf (2 pages, 127125 bytes).
+Output written on test.pdf (2 pages, 127090 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -24,6 +24,6 @@
     "natural_join_op": "\\natural_join",
     "union_op": "+",
     "difference_op": "-",
-    "intersect_op": "\\i"
+    "intersect_op": "\\cap"
   }
 }

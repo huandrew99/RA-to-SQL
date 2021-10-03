@@ -10,17 +10,20 @@ def tex_file(filename):
     texFile = open(filename)
     lines = texFile.readlines()
     str = '\t\\textbf{Answer}:\\\\\n'
-    res = ''
-    print(str)
+    res = []
+    tempstr = ''
+    #print(str)
     i = 0
     for i in range(len(lines)):
         if lines[i] == str:
             i += 1
             while lines[i] != '\t\n':
-                res = res + lines[i].strip(' \t$\n') + ';'
+                tempstr = tempstr + lines[i].strip(' \t$\n') + ';'
 
                 i += 1
-        #print(line)
+            res.append(tempstr)
+            tempstr = ''
+        #print(lines[i])
     return res
 
 
@@ -28,18 +31,18 @@ def test():
     return tex_file('test.tex')
 
 
-def tosql():
+def tosql(rastring):
     with open('config.json') as config_file:
         config = json.load(config_file)
     r = Rapt(**config)
     f = open('schema.json')
     schema = json.load(f)
-    strarg = test()
-    if strarg == ';':
+
+    if rastring == ';':
         print('No valid input string')
         return
-    print(strarg + '\n')
-    return r.to_sql(strarg, schema)
+
+    return r.to_sql(rastring, schema)
 
 
 def runsql():
@@ -62,7 +65,7 @@ def runsql():
 
 
 def runsqlite():
-    sql_list = tosql()
+    sql_list = produceSqlQuery()
     print('SQL: Queries')
     for q in sql_list:
         print(q)
@@ -78,11 +81,32 @@ INSERT INTO bookloans VALUES (0, 0, 0, '10/1/2020', '10/1/2021');
 INSERT INTO member VALUES (0, 'Cixin Liu', 'Beijing', '2222211111');
 INSERT INTO librarybranch VALUES (0, 'west lafayette library', 'Indiana');
     """
-    query = (sql_list[1])
-    cursor.execute(query)
-    result = cursor.fetchall()
-    for row in result:
-        print(row)
+    count = 0
+    for sql in sql_list:
+        count += 1
+        print('Question: ')
+        tablename = []
+        for i, q in enumerate(sql):
+            if q.startswith('CREATE'):
+                #print(q, "true")
+                cursor.execute(q)
+                tablename.append(q.split()[3])
+                #print(tablename)
+                if i == len(sql) - 1:
+                    #print(tablename)
+                    #print("select * from " + tablename[-1])
+                    cursor.execute("select * from " + tablename[-1])
+                    result = cursor.fetchall()
+                    for row in result:
+                        print(row)
+                    for table in tablename:
+
+                        cursor.execute("drop table " + table)
+            else:
+                cursor.execute(q)
+                result = cursor.fetchall()
+                for row in result:
+                    print(row)
     cursor.close()
 
     conn.close()
@@ -90,6 +114,52 @@ INSERT INTO librarybranch VALUES (0, 'west lafayette library', 'Indiana');
 
 def driver():
     runsql()
+
+
+def preprocess(raw):
+    i = 0
+    j = 0
+    result = ""
+    firstFind = False
+    for j in range(len(raw)):
+        if (i < len(raw) and raw[i] == '(' and not firstFind):
+            while(raw[i+1] != ')' and i < len(raw)):
+                # print("inside")
+                i += 1
+                # print(raw[i])
+                # print(i)
+            i += 2
+            firstFind = True
+        else:
+            # print(raw[i])
+            if (i < len(raw)):
+                result += raw[i]
+                i += 1
+
+
+
+    return result
+
+
+def produceSqlQuery():
+    rastringlist = test()
+
+    # print(rastringlist[1])
+    # print(rastringlist[4])
+    sqlstringlist = []
+    for rastring in rastringlist:
+        try:
+            sqlstringlist.append(tosql(rastring))
+        except Exception:
+            pass
+
+    for sqlstring in (sqlstringlist):
+        for i, item in enumerate(sqlstring):
+            sqlstring[i] = preprocess(sqlstring[i])
+
+    #for sqlstring in sqlstringlist:
+        #print(sqlstring)
+    return sqlstringlist
 
 
 if __name__ == '__main__':
@@ -102,14 +172,17 @@ if __name__ == '__main__':
     #print(r.to_sql(stringtest, schema))
 
 
+    #teststring = preprocess(tosql())
 
     '''
-    #print(test())
+    
     #test = "WithLoans \\leftarrow \\project_{MembId} (BookLoans);AllMemb \\leftarrow \\project_{MembId} (Member);NoLoans \\leftarrow AllMemb - WithLoans;Result \\leftarrow \\project_{MembName} (NoLoans \\j Member);"
     #print(test)
-    #print(r.to_sql(test, schema))
+    print(r.to_sql(test(), schema))
     '''
     #driver()
+    #runsql()
+    #print(teststring)
     runsqlite()
 
 

@@ -1,19 +1,16 @@
 {
   "Book": [
-    "name",
-    "age",
-    "happiness"
+    "BookId",
+    "Title",
+    "PublId"
   ],
   "Author": [
-    "name",
-    "happiness",
-    "id"
+    "AuthName",
+    "Authid"
   ],
   "AuthorBook": [
-    "name",
-    "species",
-    "happy",
-    "trips"
+    "AuthId",
+    "BookId"
   ],
   "Publisher": [
     "PublID",
